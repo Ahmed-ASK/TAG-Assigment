@@ -1,0 +1,124 @@
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --light-gray: #dee2e6;
+    --dark: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Header Styles */
+.logo-icon {
+    background-color: var(--dark);
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+.pricing-header {
+    max-width: 700px;
+}
+
+.pricing-card-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.pricing-card-title small {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Comparison Table */
+.comparison-table th {
+    font-weight: normal;
+    text-align: left;
+}
+
+.feature-check {
+    color: var(--primary-color);
+}
+
+.table-responsive {
+    margin-bottom: 3rem;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Enterprise Card Highlight */
+.enterprise-card {
+    border-color: var(--primary-color);
+}
+
+.enterprise-header {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--light-gray);
+}
+
+.footer h5 {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pricing-card-title {
+        font-size: 2rem;
+    }
+    
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+} 
